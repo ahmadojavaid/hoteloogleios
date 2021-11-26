@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--No Internet-->
+        <scene sceneID="mOe-uM-82h">
+            <objects>
+                <viewController storyboardIdentifier="NoInternet" id="zmt-hk-2oS" customClass="NoInternet" customModule="Hoteloogle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NCv-xw-g0G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ddd" translatesAutoresizingMaskIntoConstraints="NO" id="1vn-U3-vUN">
+                                <rect key="frame" x="10" y="183.5" width="355" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="YZd-z3-7DQ"/>
+                                    <constraint firstAttribute="width" secondItem="1vn-U3-vUN" secondAttribute="height" multiplier="71:60" id="n3w-wi-Tsa"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="YZd-z3-7DQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="YZd-z3-7DQ"/>
+                                        <exclude reference="n3w-wi-Tsa"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ywa-Gx-Ap0">
+                                <rect key="frame" x="0.0" y="597" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ac7-M5-GAy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansChakma-Regular" family="Noto Sans Chakma" pointSize="17"/>
+                                <state key="normal" title="Retry">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="retryBtn:" destination="zmt-hk-2oS" eventType="touchUpInside" id="nej-AF-uCh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Internet is not connected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vp-Gi-krk">
+                                <rect key="frame" x="8" y="491.5" width="359" height="17"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.090196065604686737" green="0.090196080505847931" blue="0.090196065604686737" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="VOd-2a-1xR" firstAttribute="bottom" secondItem="Ywa-Gx-Ap0" secondAttribute="bottom" constant="20" id="1we-uC-9ac"/>
+                            <constraint firstItem="VOd-2a-1xR" firstAttribute="trailing" secondItem="Ywa-Gx-Ap0" secondAttribute="trailing" id="7Bf-gv-3PI"/>
+                            <constraint firstItem="Ywa-Gx-Ap0" firstAttribute="top" secondItem="9Vp-Gi-krk" secondAttribute="bottom" constant="8" id="Alx-kp-rd1"/>
+                            <constraint firstItem="1vn-U3-vUN" firstAttribute="leading" secondItem="VOd-2a-1xR" secondAttribute="leading" constant="10" id="JVe-ah-dhl"/>
+                            <constraint firstItem="Ywa-Gx-Ap0" firstAttribute="leading" secondItem="VOd-2a-1xR" secondAttribute="leading" id="PfZ-2H-kbb"/>
+                            <constraint firstItem="1vn-U3-vUN" firstAttribute="centerY" secondItem="NCv-xw-g0G" secondAttribute="centerY" id="TsC-lO-IJV"/>
+                            <constraint firstItem="9Vp-Gi-krk" firstAttribute="leading" secondItem="VOd-2a-1xR" secondAttribute="leading" constant="8" id="bOy-D9-TBz"/>
+                            <constraint firstItem="9Vp-Gi-krk" firstAttribute="leading" secondItem="VOd-2a-1xR" secondAttribute="leading" constant="8" id="cff-Gm-jO0"/>
+                            <constraint firstItem="1vn-U3-vUN" firstAttribute="centerX" secondItem="NCv-xw-g0G" secondAttribute="centerX" id="fSx-7D-fjr"/>
+                            <constraint firstItem="1vn-U3-vUN" firstAttribute="leading" secondItem="VOd-2a-1xR" secondAttribute="leading" constant="150" id="gOu-ml-qtJ"/>
+                            <constraint firstItem="9Vp-Gi-krk" firstAttribute="top" secondItem="1vn-U3-vUN" secondAttribute="bottom" constant="8" id="hFl-6A-ZAb"/>
+                            <constraint firstItem="VOd-2a-1xR" firstAttribute="trailing" secondItem="9Vp-Gi-krk" secondAttribute="trailing" constant="8" id="meG-ds-6Ns"/>
+                            <constraint firstItem="1vn-U3-vUN" firstAttribute="centerY" secondItem="NCv-xw-g0G" secondAttribute="centerY" id="mgD-9e-s4c"/>
+                            <constraint firstItem="VOd-2a-1xR" firstAttribute="trailing" secondItem="9Vp-Gi-krk" secondAttribute="trailing" constant="8" id="nt5-Pz-rco"/>
+                            <constraint firstItem="1vn-U3-vUN" firstAttribute="centerX" secondItem="NCv-xw-g0G" secondAttribute="centerX" id="to7-Ti-voM"/>
+                            <constraint firstItem="VOd-2a-1xR" firstAttribute="trailing" secondItem="1vn-U3-vUN" secondAttribute="trailing" constant="150" id="uKS-TB-Dow"/>
+                            <constraint firstItem="VOd-2a-1xR" firstAttribute="trailing" secondItem="1vn-U3-vUN" secondAttribute="trailing" constant="10" id="xgS-s6-51u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VOd-2a-1xR"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="nt5-Pz-rco"/>
+                                <exclude reference="uKS-TB-Dow"/>
+                                <exclude reference="gOu-ml-qtJ"/>
+                                <exclude reference="mgD-9e-s4c"/>
+                                <exclude reference="to7-Ti-voM"/>
+                                <exclude reference="bOy-D9-TBz"/>
+                                <exclude reference="Alx-kp-rd1"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="meG-ds-6Ns"/>
+                                <include reference="nt5-Pz-rco"/>
+                                <include reference="uKS-TB-Dow"/>
+                                <exclude reference="xgS-s6-51u"/>
+                                <exclude reference="JVe-ah-dhl"/>
+                                <exclude reference="TsC-lO-IJV"/>
+                                <exclude reference="fSx-7D-fjr"/>
+                                <include reference="gOu-ml-qtJ"/>
+                                <include reference="mgD-9e-s4c"/>
+                                <include reference="to7-Ti-voM"/>
+                                <include reference="bOy-D9-TBz"/>
+                                <exclude reference="cff-Gm-jO0"/>
+                                <exclude reference="hFl-6A-ZAb"/>
+                                <include reference="Alx-kp-rd1"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RWV-aS-MNX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242.40000000000001" y="-25.637181409295355"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ddd" width="512" height="512"/>
+    </resources>
+</document>

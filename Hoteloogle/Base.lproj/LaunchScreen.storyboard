@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ddd" translatesAutoresizingMaskIntoConstraints="NO" id="vv3-q7-sdG">
+                                <rect key="frame" x="10" y="204.5" width="355" height="258"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vv3-q7-sdG" secondAttribute="height" multiplier="1:1" id="aDp-GF-7Zj"/>
+                                    <constraint firstAttribute="width" secondItem="vv3-q7-sdG" secondAttribute="height" multiplier="125:91" id="ho5-Tm-oy1"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="aDp-GF-7Zj"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="aDp-GF-7Zj"/>
+                                        <exclude reference="ho5-Tm-oy1"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vv3-q7-sdG" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="I3b-aI-uvM"/>
+                            <constraint firstItem="vv3-q7-sdG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-10" id="M76-3P-Zbf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vv3-q7-sdG" secondAttribute="trailing" constant="150" id="PUr-Ts-h7h"/>
+                            <constraint firstItem="vv3-q7-sdG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="Y8w-bV-Mbv"/>
+                            <constraint firstItem="vv3-q7-sdG" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="aLW-6R-Eoz"/>
+                            <constraint firstItem="vv3-q7-sdG" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="u6E-G6-WxO"/>
+                            <constraint firstItem="vv3-q7-sdG" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="uNT-AR-CNf"/>
+                            <constraint firstItem="vv3-q7-sdG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="w2b-oA-aDv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="I3b-aI-uvM"/>
+                                <exclude reference="u6E-G6-WxO"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="I3b-aI-uvM"/>
+                                <exclude reference="M76-3P-Zbf"/>
+                                <exclude reference="aLW-6R-Eoz"/>
+                                <include reference="u6E-G6-WxO"/>
+                                <exclude reference="uNT-AR-CNf"/>
+                                <exclude reference="w2b-oA-aDv"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="M76-3P-Zbf"/>
+                                <exclude reference="w2b-oA-aDv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.623688155922046" y="373.60000000000002"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ddd" width="512" height="512"/>
+    </resources>
+</document>
